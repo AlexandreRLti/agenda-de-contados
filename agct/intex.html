@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="img/">
     <title>Agenda de Contatos</title>
 </head>
 <body>
-    <h1>Agenda de Contatos</h1>
-
+        
+    <div class="cont">
+        <h2>Agenda de Contatos</h2>     
     <form id="contactForm">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" required>
-
-        <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" required pattern="[0-9]{10}">
-
-        <button type="button" onclick="addContact()">Cadastrar</button>
+        <ul>
+            <li>
+                <label for="name">Nome:</label>
+                <input class="in" type="text" id="name" required>
+                <label for="phone">Telefone:</label>
+                <input class="it" type="tel" id="phone" required pattern="[0-9]{10}">
+            
+            </li>
+        </ul>
+        <button class="button-23" type="button" onclick="addContact()">Cadastrar</button>
     </form>
 
     <table id="contactTable">
         <tr>
-            <th>Nome</th>
-            <th>Telefone</th>
+            <th>Nome </th>
+            <th> Telefone</th>
         </tr>
+       </div>
     </table>
     <script src="js/myscript.js"></script>
 </body>
