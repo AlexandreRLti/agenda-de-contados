@@ -1,54 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Agenda de Contatos</title>
-    <style>
-        table {
-            width: 50%;
-            margin-top: 20px;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
     <h1>Agenda de Contatos</h1>
@@ -69,29 +25,6 @@
             <th>Telefone</th>
         </tr>
     </table>
-
-    <script>
-        function addContact() {
-            var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
-
-            if (name && phone) {
-                var table = document.getElementById("contactTable");
-                var newRow = table.insertRow(table.rows.length);
-                
-                var cell1 = newRow.insertCell(0);
-                var cell2 = newRow.insertCell(1);
-
-                cell1.innerHTML = name;
-                cell2.innerHTML = phone;
-
-                // Limpar campos do formulário após adicionar o contato
-                document.getElementById("name").value = "";
-                document.getElementById("phone").value = "";
-            } else {
-                alert("Por favor, preencha todos os campos.");
-            }
-        }
-    </script>
+    <script src="js/myscript.js"></script>
 </body>
 </html>
